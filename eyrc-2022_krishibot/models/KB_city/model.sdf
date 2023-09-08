@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<!-- 
+*****************************************************************************************
+*
+*        =============================================
+*           Krishi Bot (KB) Theme (eYRC 2022-23)
+*        =============================================
+*
+*
+*  Filename:			model.sdf
+*  Created:				28/08/2022
+*  Last Modified:	25/09/2022
+*  Modified by:   Amit
+*  Author:				e-Yantra Team
+*  
+***************************************************************************************** 
+-->
+<sdf version="1.6">
+  <model name="KB_city">
+    <static>true</static>
+    <link name="link">
+      <visual name="visual1">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh>
+            <uri>model://KB_city/meshes/KB_city.dae</uri>
+            <scale>1.1 1.1 1.1</scale>
+          </mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

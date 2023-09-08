@@ -1,0 +1,722 @@
+<?xml version="1.0"?>
+<!-- 
+*****************************************************************************************
+*
+*        =============================================
+*           Krishi Bot (KB) Theme (eYRC 2022-23)
+*        =============================================
+*
+*
+*  Filename:			KB_city.world
+*  Created:				28/08/2022
+*  Last Modified:		29/09/2022
+*  Modified by:   		Amit
+*  Author:				Amit (e-Yantra Team)
+*  
+***************************************************************************************** 
+-->
+<sdf version="1.6">
+  <world name="default">
+	<!-- <physics type="ode">
+		<max_step_size>0.002</max_step_size>
+		<real_time_factor>1</real_time_factor>
+		<real_time_update_rate>1000</real_time_update_rate>
+		<ode>
+			<solver>
+				<iters>75</iters>
+				<island_threads>4</island_threads>
+			</solver>
+			<constraints>
+				<contact_surface_layer>0.005</contact_surface_layer>
+			</constraints>
+		</ode>
+	</physics> -->
+
+    <gui>
+      <camera name="user_default">
+        <pose>-24.307 -9.572 4.851 0 0.071 0.316</pose>
+      </camera>
+    </gui>
+    <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/>
+
+    <light name="light0" type="directional">
+      <pose frame="">0 -18.818 8 0.75 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light1" type="directional">
+      <pose frame="">0 -1.26453 6 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light3" type="directional">
+      <pose frame="">3.9239 1.64974 4 0 1.2 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light4" type="directional">
+      <pose frame="">-2.5 4.649 4 0 -0.95 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+
+    <light name="light5" type="directional">
+      <pose frame="">0.454419 12.4783 5 -0.8 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+
+    <scene>
+		<shadows>false</shadows>
+		<ambient>0.5 0.5 0.5 1.0</ambient>
+    <grid>false</grid>    
+      <sky>        
+        <clouds>
+          <speed>12</speed>
+        </clouds>        
+      </sky>
+    </scene>
+    <include>
+      <uri>model://KB_Greenhouse</uri>
+      <pose>7.2 -1.16 -0.03 0 0 -1.57</pose>
+	</include>
+    <include>
+      <uri>model://KB_Greenhouse_Ground</uri>
+      <pose>5.2 -0.3 0.155 0 0 -1.57</pose>
+	</include>
+
+	<include> 
+	  	<uri>model://KB_city</uri>
+		  <name>kb_city</name>
+		  <pose>5 0 0 0 0 0</pose> 
+	</include>
+
+    <include>
+	  	<uri>model://start_zone</uri>
+		  <name>start_zone</name>
+		  <pose>0 0 0.07 0 0 0</pose>
+    </include>
+
+<!-- 0 -->
+	<include>
+		<uri>model://plant_bell_pepper_red</uri>
+		<name>plant00</name>
+		<pose>1.5 0.8 0.49 0 0 5.34188268943</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough00</name>
+		<pose>1.5 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 1 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant01</name>
+		<pose>2.3 0.8 0.49 0 0 2.6135652518</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough01</name>
+		<pose>2.3 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 2 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant02</name>
+		<pose>3.1 0.8 0.49 0 0 2.12446453074</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough02</name>
+		<pose>3.1 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 3 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant03</name>
+		<pose>3.9 0.8 0.49 0 0 3.33601631712</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough03</name>
+		<pose>3.9 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 4 -->
+	<include>
+		<uri>model://plant_bell_pepper_yellow</uri>
+		<name>plant04</name>
+		<pose>4.7 0.8 0.49 0 0 4.79290636186</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough04</name>
+		<pose>4.7 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 5 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant05</name>
+		<pose>5.5 0.8 0.49 0 0 3.38380320291</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough05</name>
+		<pose>5.5 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 6 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant06</name>
+		<pose>6.3 0.8 0.49 0 0 2.13792364415</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough06</name>
+		<pose>6.3 0.8 0.09 1.57 0 0</pose>
+	</include>
+<!-- 7 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant07</name>
+		<pose>7.1 0.8 0.49 0 0 2.85999831361</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough07</name>
+		<pose>7.1 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 8 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant08</name>
+		<pose>7.9 0.8 0.49 0 0 1.96971919901</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough08</name>
+		<pose>7.9 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 9 -->
+	<include>
+		<uri>model://plant_bell_pepper_yellow</uri>
+		<name>plant09</name>
+		<pose>8.7 0.8 0.49 0 0 5.64805043451</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough09</name>
+		<pose>8.7 0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 10 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant10</name>
+		<pose>1.5 -0.8 0.49 0 0 5.34188268943</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough10</name>
+		<pose>1.5 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 11 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant11</name>
+		<pose>2.3 -0.8 0.49 0 0 2.6135652518</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough11</name>
+		<pose>2.3 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 12 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant12</name>
+		<pose>3.1 -0.8 0.49 0 0 2.12446453074</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough12</name>
+		<pose>3.1 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 13 -->
+	<include>
+		<uri>model://plant_bell_pepper_yellow</uri>
+		<name>plant13</name>
+		<pose>3.9 -0.8 0.49 0 0 3.33601631712</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough13</name>
+		<pose>3.9 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 14 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant14</name>
+		<pose>4.7 -0.8 0.49 0 0 4.79290636186</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough14</name>
+		<pose>4.7 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 15 -->
+	<include>
+		<uri>model://plant_bell_pepper_red</uri>
+		<name>plant15</name>
+		<pose>5.5 -0.8 0.49 0 0 3.38380320291</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough15</name>
+		<pose>5.5 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 16 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant16</name>
+		<pose>6.3 -0.8 0.49 0 0 2.13792364415</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough16</name>
+		<pose>6.3 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 17 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant17</name>
+		<pose>7.1 -0.8 0.49 0 0 2.85999831361</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough17</name>
+		<pose>7.1 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 18 -->
+	<include>
+		<uri>model://plant_bell_pepper_red</uri>
+		<name>plant18</name>
+		<pose>7.9 -0.8 0.49 0 0 1.96971919901</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough18</name>
+		<pose>7.9 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+<!-- 19 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant19</name>
+		<pose>8.7 -0.8 0.49 0 0 5.64805043451</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough19</name>
+		<pose>8.7 -0.8 0.09 1.57 0 0</pose>
+	</include>
+
+
+<!-- 20 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant20</name>
+		<pose>11.5 -3 2 0 0 1.25317275085</pose>
+	</include>
+
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough20</name>
+		<pose>11.5 -3 1.65 1.57 0 1.57</pose>
+	</include>
+
+<!-- 21 -->
+	<include>
+		<uri>model://plant_bell_pepper_yellow</uri>
+		<name>plant21</name>
+		<pose>11.5 -2.2 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough21</name>
+		<pose>11.5 -2.2 1.65 1.57 0 1.57</pose>
+	</include>
+
+<!-- 22 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant22</name>
+		<pose>11.5 2.2 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough22</name>
+		<pose>11.5 2.2 1.65 1.57 0 1.57</pose>
+	</include>
+
+<!-- 23 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant23</name>
+		<pose>11.5 3 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough23</name>
+		<pose>11.5 3 1.65 1.57 0 1.57</pose>
+	</include>
+
+<!-- 24 -->
+
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant24</name>
+		<pose>10.7 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough24</name>
+		<pose>10.7 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 25 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant25</name>
+		<pose>9.9 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough25</name>
+		<pose>9.9 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 26 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant26</name>
+		<pose>9.1 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough26</name>
+		<pose>9.1 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 27 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant27</name>
+		<pose>8.2 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough27</name>
+		<pose>8.2 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 28 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant28</name>
+		<pose>7.4 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough28</name>
+		<pose>7.4 3.4 1.65 1.57 0 0</pose>
+	</include>	
+
+<!-- 29 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant29</name>
+		<pose>6.6 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough29</name>
+		<pose>6.6 3.4 1.65 1.57 0 0</pose>
+	</include>		
+
+<!-- 30 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant30</name>
+		<pose>5.8 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough30</name>
+		<pose>5.8 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 31 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant31</name>
+		<pose>5 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough31</name>
+		<pose>5 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 32 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant32</name>
+		<pose>4.2 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough32</name>
+		<pose>4.2 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 33 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant33</name>
+		<pose>3.4 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough33</name>
+		<pose>3.4 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 34 -->
+	<include>
+		<uri>model://plant_bell_pepper_red</uri>
+		<name>plant34</name>
+		<pose>2.6 3.4 2 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough34</name>
+		<pose>2.6 3.4 1.65 1.57 0 0</pose>
+	</include>
+
+<!-- 35 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant35</name>
+		<pose>-0.87 0 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough35</name>
+		<pose>-0.87 0 0.09 1.57 0 -1.57</pose>
+	</include>
+	
+<!-- 36 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant36</name>
+		<pose>-0.87 0.8 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough36</name>
+		<pose>-0.87 0.8 0.09 1.57 0 -1.57</pose>
+	</include>
+
+
+<!-- 37 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant37</name>
+		<pose>-0.87 1.60 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough37</name>
+		<pose>-0.87 1.60 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 38 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant38</name>
+		<pose>-0.87 2.4 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough38</name>
+		<pose>-0.87 2.4 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 39 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant39</name>
+		<pose>-0.87 3.2 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough39</name>
+		<pose>-0.87 3.2 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 40 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant40</name>
+		<pose>-0.87 -0.8 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough40</name>
+		<pose>-0.87 -0.8 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 41 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant41</name>
+		<pose>-0.87 -1.6 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough41</name>
+		<pose>-0.87 -1.6 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 42 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant42</name>
+		<pose>-0.87 -2.4 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough42</name>
+		<pose>-0.87 -2.4 0.09 1.57 0 -1.57</pose>
+	</include>
+
+<!-- 43 -->
+	<include>
+		<uri>model://plant_bell_pepper_brown</uri>
+		<name>plant43</name>
+		<pose>-0.87 -3.2 0.49 0 0 1.25317275085</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough43</name>
+		<pose>-0.87 -3.2 0.09 1.57 0 -1.57</pose>
+	</include>
+
+  </world>
+</sdf>

@@ -1,0 +1,35 @@
+<?xml version="1.0"?>
+<!-- 
+*****************************************************************************************
+*
+*        =============================================
+*           Krishi Bot (KB) Theme (eYRC 2022-23)
+*        =============================================
+*
+*
+*  Filename:			model.sdf
+*  Created:				28/08/2022
+*  Last Modified:		28/08/2022
+*  Modified by:   		Amit
+*  Author:				e-Yantra Team
+*  
+***************************************************************************************** 
+-->
+<sdf version="1.6">
+  <model name="bell_pepper_yellow">
+    <static>true</static>
+    <link name="link">
+      <collision name="collision">
+          <geometry>
+            <box><size>0.06 0.06 0.07</size></box>
+          </geometry>      
+      </collision>
+      <visual name="visual1">
+        <cast_shadows>false</cast_shadows>
+        <geometry>
+          <mesh><uri>model://bell_pepper_yellow/meshes/bell_pepper_yellow.dae</uri></mesh>
+        </geometry>
+      </visual>
+    </link>
+  </model>
+</sdf>

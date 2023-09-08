@@ -1,0 +1,157 @@
+<?xml version="1.0"?>
+<!-- 
+*****************************************************************************************
+*
+*        =============================================
+*           Krishi Bot (KB) Theme (eYRC 2022-23)
+*        =============================================
+*
+*
+*  Filename:			KB_city.world
+*  Created:				13/10/2022
+*  Last Modified:		22/10/2022
+*  Modified by:   		Amit, Jaison
+*  Author:				Amit (e-Yantra Team)
+*  
+***************************************************************************************** 
+-->
+<sdf version="1.6">
+  <world name="default">
+    <gui>
+      <camera name="user_default">
+        <pose>-24.307 -9.572 4.851 0 0.071 0.316</pose>
+      </camera>
+    </gui>
+    <physics type="ode">
+      <max_step_size>0.002</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+      <ode>
+        <solver>
+          <iters>75</iters>
+          <island_threads>4</island_threads>
+        </solver>
+        <constraints>
+          <contact_surface_layer>0.005</contact_surface_layer>
+        </constraints>
+      </ode>
+    </physics>    
+    <!-- <plugin name="ros_link_attacher_plugin" filename="libgazebo_ros_link_attacher.so"/> -->
+
+    <light name="light0" type="directional">
+      <pose frame="">0 -18.818 8 0.75 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light1" type="directional">
+      <pose frame="">0 -1.26453 6 0 -0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light3" type="directional">
+      <pose frame="">3.9239 1.64974 4 0 1.2 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+    <light name="light4" type="directional">
+      <pose frame="">-2.5 4.649 4 0 -0.95 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+
+    <light name="light5" type="directional">
+      <pose frame="">0.454419 12.4783 5 -0.8 0 0</pose>
+      <diffuse>0.5 0.5 0.5 1</diffuse>
+      <specular>0.1 0.1 0.1 1</specular>
+      <direction>0.1 0.1 -0.9</direction>
+      <attenuation>
+        <range>20</range>
+        <constant>0.5</constant>
+        <linear>0.01</linear>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <cast_shadows>0</cast_shadows>
+    </light>
+
+
+    <scene>
+		<shadows>false</shadows>
+		<ambient>0.5 0.5 0.5 1.0</ambient>
+    <grid>false</grid>    
+      <sky>        
+        <clouds>
+          <speed>12</speed>
+        </clouds>        
+      </sky>
+    </scene>
+    <include>
+      <uri>model://KB_Greenhouse</uri>
+      <pose>7.2 -1.16 -0.03 0 0 -1.57</pose>
+	</include>
+    <include>
+      <uri>model://KB_Greenhouse_Ground</uri>
+      <pose>5.2 -0.3 0.155 0 0 -1.57</pose>
+	</include>
+
+	<include> 
+	  	<uri>model://KB_city</uri>
+		  <name>kb_city</name>
+		  <pose>5 0 0 0 0 0</pose> 
+	</include>
+
+    <include>
+	  	<uri>model://start_zone</uri>
+		  <name>start_zone</name>
+		  <pose>0 0 0.07 0 0 0</pose>
+    </include>
+
+	<include>
+		<uri>model://plant_all_bell_peppers</uri>
+		<name>plant00</name>
+		<pose>0.0 0.73 0.49 0 0 0.77</pose>
+	</include>
+
+	<include>
+		<uri>model://trough</uri>
+		<name>trough00</name>
+		<pose>0.0 0.73 0.09 1.57 0 0</pose>
+	</include>
+
+  </world>
+</sdf>

@@ -1,0 +1,11 @@
+moveit_setup_assistant_config:
+  URDF:
+    package: eyrc-2022_krishibot
+    relative_path: models/ebot/agri_bot.xacro
+    xacro_args: ""
+  SRDF:
+    relative_path: config/agribot.srdf
+  CONFIG:
+    author_name: ravivarma
+    author_email: ravivarma.mc21@bitsathy.ac.in
+    generated_timestamp: 1669791153

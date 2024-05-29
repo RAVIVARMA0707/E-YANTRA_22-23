@@ -41,11 +41,7 @@ https://github.com/RAVIVARMA0707/E-YANTRA_22-23/assets/96245458/a2b86e59-63ca-49
 ## Contributors 🤝
  1. SHITHAARTHAN M -> Role : Vision 📷
  2. SUTHARSAN K         -> Role : Path Planning Algorithm 
-## Acknowledgements
 
--   [Oracle](https://www.oracle.com/java/) for providing the Java Development Kit.
--   [JetBrains](https://www.jetbrains.com/idea/) for IntelliJ IDEA, a powerful Java IDE.
--   The open-source community for continuous contributions and improvements.
 
 
 
